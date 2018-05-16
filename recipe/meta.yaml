@@ -1,6 +1,6 @@
 {% set name = "rollbar" %}
-{% set version = "0.13.17" %}
-{% set sha256 = "a4b368e90951aeb372f3d12e31a6fbdf579d57c646f7688705ac555b1e414a2e" %}
+{% set version = "0.14.0" %}
+{% set sha256 = "f4db1d07ecc2a2c0a8d96075b83e1e7abe2fcea70b222ae294125cb675c57396" %}
 
 package:
   name: {{ name|lower }}
