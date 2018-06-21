@@ -15,12 +15,15 @@ Python notifier for reporting exceptions, errors, and log messages to Rollbar.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/rollbar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rollbar-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/rollbar-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/rollbar-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rollbar/badges/version.svg)](https://anaconda.org/conda-forge/rollbar)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rollbar/badges/downloads.svg)](https://anaconda.org/conda-forge/rollbar)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-rollbar-green.svg)](https://anaconda.org/conda-forge/rollbar) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rollbar.svg)](https://anaconda.org/conda-forge/rollbar) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rollbar.svg)](https://anaconda.org/conda-forge/rollbar) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rollbar.svg)](https://anaconda.org/conda-forge/rollbar) |
 
 Installing rollbar
 ==================
