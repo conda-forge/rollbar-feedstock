@@ -1,6 +1,6 @@
 {% set name = "rollbar" %}
-{% set version = "0.14.7" %}
-{% set sha256 = "ee2dd1a2b512f93e9c0f26c8cf6bb28c4f06ae7e0c33a60e39b49337e0d92d57" %}
+{% set version = "0.15.0" %}
+{% set sha256 = "75add43e634f3f75e069e1edd2b793b8d1e8800f16419a1d83065b49dd5d1372" %}
 
 package:
   name: {{ name|lower }}
@@ -45,7 +45,7 @@ about:
   home: https://github.com/rollbar/pyrollbar
   license: MIT
   license_family: MIT
-  summary: 'Rollbar notifier for Python'
+  summary: Rollbar notifier for Python
 
   description: |
     Python notifier for reporting exceptions, errors, and log messages to Rollbar.
