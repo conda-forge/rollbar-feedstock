@@ -5,7 +5,7 @@ Home: https://github.com/rollbar/pyrollbar
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Rollbar notifier for Python
 
