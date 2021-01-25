@@ -5,9 +5,11 @@ Home: https://github.com/rollbar/pyrollbar
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rollbar-feedstock/blob/master/LICENSE.txt)
 
 Summary: Rollbar notifier for Python
+
+Documentation: https://rollbar.com/docs/notifier/pyrollbar/
 
 Python notifier for reporting exceptions, errors, and log messages to Rollbar.
 
