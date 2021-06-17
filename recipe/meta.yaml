@@ -1,6 +1,6 @@
 {% set name = "rollbar" %}
-{% set version = "0.15.1" %}
-{% set sha256 = "96b63df27a47232aa16a142d2f5812073f8bf7db2b81c5f7981b9a4d4659468c" %}
+{% set version = "0.16.0" %}
+{% set sha256 = "ef3c04b320c04ebc9ac3c30191be79ceaf8177a096df401e7ec736158795a9c6" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,7 @@ build:
     - rollbar = rollbar.cli:main
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
