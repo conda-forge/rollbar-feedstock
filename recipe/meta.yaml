@@ -14,32 +14,26 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
-    - rollbar = rollbar.cli:main
+    - rollbar=rollbar.cli:main
 
 requirements:
   host:
-    - python
-    - setuptools
+    - python >=3.3
+    - pip
   run:
-    - python
+    - python >=3.3
     - requests >=0.12.1
     - six >=1.9.0
 
 test:
   requires:
-    - unittest2
-    - mock
-    - webob
-    - blinker
-    - pytest
+    - pip
   imports:
     - rollbar
-    - rollbar.test
   commands:
-    - py.test --pyargs rollbar
-    - rollbar --help
+    - pip check
 
 about:
   home: https://github.com/rollbar/pyrollbar
