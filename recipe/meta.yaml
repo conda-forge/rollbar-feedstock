@@ -1,6 +1,6 @@
 {% set name = "rollbar" %}
-{% set version = "0.15.1" %}
-{% set sha256 = "96b63df27a47232aa16a142d2f5812073f8bf7db2b81c5f7981b9a4d4659468c" %}
+{% set version = "0.15.2" %}
+{% set sha256 = "5e80fe7c9b15e84f5b72e45ebaa85bba1c13234e447a5f3801d094eb379c2d0e" %}
 
 package:
   name: {{ name|lower }}
@@ -14,37 +14,32 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
-    - rollbar = rollbar.cli:main
+    - rollbar=rollbar.cli:main
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - python >=3.3
+    - pip
   run:
-    - python
+    - python >=3.3
     - requests >=0.12.1
     - six >=1.9.0
 
 test:
   requires:
-    - unittest2
-    - mock
-    - webob
-    - blinker
-    - pytest
+    - pip
   imports:
     - rollbar
-    - rollbar.test
   commands:
-    - py.test --pyargs rollbar
-    - rollbar --help
+    - pip check
 
 about:
   home: https://github.com/rollbar/pyrollbar
   license: MIT
   license_family: MIT
+  license_file: LICENSE
   summary: Rollbar notifier for Python
 
   description: |
