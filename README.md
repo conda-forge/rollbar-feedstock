@@ -149,7 +149,5 @@ Feedstock Maintainers
 =====================
 
 * [@TheOriginalAlex](https://github.com/TheOriginalAlex/)
-
-
-<!-- dummy commit to enable rerendering -->
+* [@fpaniagua](https://github.com/fpaniagua/)
 
