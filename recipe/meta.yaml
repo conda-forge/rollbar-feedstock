@@ -39,6 +39,7 @@ about:
   home: https://github.com/rollbar/pyrollbar
   license: MIT
   license_family: MIT
+  license_file: LICENSE
   summary: Rollbar notifier for Python
 
   description: |
