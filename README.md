@@ -149,4 +149,5 @@ Feedstock Maintainers
 =====================
 
 * [@TheOriginalAlex](https://github.com/TheOriginalAlex/)
+* [@fpaniagua](https://github.com/fpaniagua/)
 

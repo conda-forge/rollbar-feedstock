@@ -1,6 +1,6 @@
 {% set name = "rollbar" %}
-{% set version = "0.15.2" %}
-{% set sha256 = "5e80fe7c9b15e84f5b72e45ebaa85bba1c13234e447a5f3801d094eb379c2d0e" %}
+{% set version = "0.16.3" %}
+{% set sha256 = "02313dfc60710ec736ab033d0f8c969d857a8b991cd67e0c1a91620e8a04ede2" %}
 
 package:
   name: {{ name|lower }}
@@ -20,10 +20,10 @@ build:
 
 requirements:
   host:
-    - python >=3.3
+    - python >=3.4
     - pip
   run:
-    - python >=3.3
+    - python >=3.4
     - requests >=0.12.1
     - six >=1.9.0
 
