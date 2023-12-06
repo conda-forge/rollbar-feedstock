@@ -1,6 +1,6 @@
 {% set name = "rollbar" %}
-{% set version = "0.16.3" %}
-{% set sha256 = "02313dfc60710ec736ab033d0f8c969d857a8b991cd67e0c1a91620e8a04ede2" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "6347b7e49f22f0296fc287a6aea75d642cf64494d2ee127042a7a593c97df3af" %}
 
 package:
   name: {{ name|lower }}
@@ -20,12 +20,11 @@ build:
 
 requirements:
   host:
-    - python >=3.4
+    - python >=3.6
     - pip
   run:
-    - python >=3.4
+    - python >=3.6
     - requests >=0.12.1
-    - six >=1.9.0
 
 test:
   requires:
@@ -34,6 +33,7 @@ test:
     - rollbar
   commands:
     - pip check
+    - rollbar --help
 
 about:
   home: https://github.com/rollbar/pyrollbar
@@ -41,9 +41,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: Rollbar notifier for Python
-
-  description: |
-    Python notifier for reporting exceptions, errors, and log messages to Rollbar.
+  description: Easy and powerful exception tracking with Rollbar. Send messages and exceptions with arbitrary context, get back aggregates, and debug production issues quickly.
   doc_url: https://rollbar.com/docs/notifier/pyrollbar/
 
 extra:
