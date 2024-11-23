@@ -1,9 +1,6 @@
-schema_version: 1
-
 context:
   name: rollbar
   version: 1.0.0
-  sha256: 6347b7e49f22f0296fc287a6aea75d642cf64494d2ee127042a7a593c97df3af
   python_min: 3.9
 
 package:
@@ -11,14 +8,13 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: ${{ sha256 }}
-  file_name: ${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/rollbar-${{ version }}.tar.gz
+  sha256: 6347b7e49f22f0296fc287a6aea75d642cf64494d2ee127042a7a593c97df3af
 
 build:
   number: 1
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: ${{ PYTHON }} -m pip install . -vv --debug --no-deps --no-build-isolation
   python:
     entry_points:
       - rollbar=rollbar.cli:main
@@ -26,7 +22,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}
-    - setuptools >=58.0.4
+    - setuptools >=61.0
     - pip
   run:
     - python >=${{ python_min }}
@@ -55,5 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - fpaniagua
-    - TheOriginalAlex
-
