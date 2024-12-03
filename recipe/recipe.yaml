@@ -1,6 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+
 context:
   name: rollbar
-  version: 1.0.0
+  version: "1.1.0"
+  build_number: 0
   python_min: 3.9
 
 package:
@@ -9,12 +12,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/rollbar-${{ version }}.tar.gz
-  sha256: 6347b7e49f22f0296fc287a6aea75d642cf64494d2ee127042a7a593c97df3af
+  sha256: 0894302f7caf3d1f16c84ae3d609dc6385fcdba95ae78c9af1f4809a7dd44a89
 
 build:
-  number: 1
+  number: ${{ build_number }}
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv --debug --no-deps --no-build-isolation
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
       - rollbar=rollbar.cli:main
