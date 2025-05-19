@@ -11,8 +11,7 @@ Summary: Rollbar notifier for Python
 
 Documentation: https://rollbar.com/docs/notifier/pyrollbar/
 
-Python notifier for reporting exceptions, errors, and log messages to Rollbar.
-
+Easy and powerful exception tracking with Rollbar. Send messages and exceptions with arbitrary context, get back aggregates, and debug production issues quickly.
 
 Current build status
 ====================
