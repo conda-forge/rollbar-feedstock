@@ -4,9 +4,9 @@ schema_version: 1
 
 context:
   name: rollbar
-  version: 1.1.0
-  sha256: 0894302f7caf3d1f16c84ae3d609dc6385fcdba95ae78c9af1f4809a7dd44a89
-  build_number: 2
+  version: 1.2.0
+  sha256: 991e6600374d8065e1e56accce7ab5f075fff521ce570a7a7ab700d2fa5e4bd5
+  build_number: 0
   python_min: 3.9
 
 package:
