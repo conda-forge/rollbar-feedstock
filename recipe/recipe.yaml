@@ -8,6 +8,7 @@ context:
   sha256: 98ad7f90012c791d0b40eac51b6fe688b1cadcc4aadff772fc0a23efe75fb5fc
   build_number: 0
   python_min: '3.10'
+  python_max_tested: '3.14'
 
 package:
   name: ${{ name|lower }}
@@ -40,7 +41,9 @@ tests:
       imports:
         - rollbar
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - "${{ python_min }}.*"
+        - "${{ python_max_tested }}.*"
   - requirements:
       run:
         - pip
