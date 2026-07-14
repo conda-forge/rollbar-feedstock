@@ -33,7 +33,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - requests >=0.12.1
-    - typing_extensions >=4.0.0  # [py < 311]
+    - if: match(python, "<3.11")
+      then: typing_extensions >=4.0.0
 
 tests:
   - python:
